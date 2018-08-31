@@ -1,5 +1,5 @@
-# NodeJs APIs (movie)
-This repo contains nodeJs restfull apis (movies apis - GET/DELETE/POST) and uses [swagger](https://github.com/theganyo/swagger-node-runner) you can find custom validation and security handlers implemented by swagger in the fittings folder.
+# NodeJs APIs - IN PROGRESS
+This repo contains nodeJs restfull apis (inventory apis - GET/DELETE/POST) and uses [swagger](https://github.com/theganyo/swagger-node-runner) you can find custom validation and security handlers implemented by swagger in the fittings folder.
 You can find es6/es7 coding style in this project.
 
 ## Documentation
@@ -23,11 +23,22 @@ A collection of postman requests are provided in the root.
 3. run "npm start".
 4. the server should be hosted on port 3000.
 
+It need authentication to be able to use in Browser. So it is easier to use postman.
+
+### To Test By Postman
+1. Inventory.postman_collection.json should be imported to postman.
+2. run requests.
+
 ### To Test
 1. run "npm test" - it lints the project and then runs the tests using jest.
 
 ### To Lint
 1. run "npm run lint" - eslint integrated.
+
+### To Check Code Covergae
+1. run "npm run coverage'.
+2. you see a report in command line.
+3. to see the coverage on html please refer to coverage/icov-report/index.html.
 
 ### To Debug
 1. open vsCode.
@@ -39,11 +50,3 @@ A collection of postman requests are provided in the root.
 2. select JEST* from debug list.
 3. press f5.
 
-### To Test By Postman
-1. Movies.postman_collection.json should be imported to postman.
-2. run requests.
-
-### To Check Code Covergae
-1. run "npm run coverage'.
-2. you see a report in command line.
-3. to see the coverage on html please refer to coverage/icov-report/index.html.
