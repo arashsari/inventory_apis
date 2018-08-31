@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "bcd45b87-1fb4-4b91-9ef7-537f34807e7a",
+		"name": "Inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/v1/product/54f0be26ae8aba260b8f6db7",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic c3Bhcms6dGVzdGluZzE="
+					}
+				],
+				"body": {},
+				"url": "http://localhost:3000/api/v1/product/54f0be26ae8aba260b8f6db7"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic c3Bhcms6dGVzdGluZzE="
+					}
+				],
+				"body": {},
+				"url": "http://localhost:3000/api/v1/product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/product/54f0be26ae8aba260b8f6db8",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic c3Bhcms6dGVzdGluZzE="
+					}
+				],
+				"body": {},
+				"url": "http://localhost:3000/api/v1/product/54f0be26ae8aba260b8f6db8"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic c3Bhcms6dGVzdGluZzE="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"54f0be26ae8aba260b8f6db8\",\n    \"title\": \"iphone 8\",\n    \"price\": \"700\",\n    \"category\": \"Electronics\",\n    \"description\": \"Brand new Iphone\"\n}"
+				},
+				"url": "http://localhost:3000/api/v1/product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/inventory/77f0be26ae8aba260b8f6db7",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic c3Bhcms6dGVzdGluZzE="
+					}
+				],
+				"body": {},
+				"url": "http://localhost:3000/api/v1/inventory/77f0be26ae8aba260b8f6db7"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/inventory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic c3Bhcms6dGVzdGluZzE="
+					}
+				],
+				"body": {},
+				"url": "http://localhost:3000/api/v1/inventory"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/inventory/88f0be26ae8aba260b8f6db8",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic c3Bhcms6dGVzdGluZzE="
+					}
+				],
+				"body": {},
+				"url": "http://localhost:3000/api/v1/inventory/88f0be26ae8aba260b8f6db8"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/inventory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic c3Bhcms6dGVzdGluZzE="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"88f0be26ae8aba260b8f6db8\",\n    \"product_id\": \"54f0be26ae8aba260b8f6db8\",\n    \"quantity\": \"100\",\n   \"inventory_associates\": \"Arash Sarikhani\",\n    \"address\": \"43 Lidcombe, New South Wales\",\n    \"location\": \"-33.855189, 151.057535\",\n    \"quantity_lessthan\": \"10\",\n    \"quantity_morethan\": \"200\"\n}"
+				},
+				"url": "http://localhost:3000/api/v1/inventory"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "inventory_apis",
+  "version": "1.0.0",
+  "description": "Inventory Apis",
+  "main": "lib/index.js",
+  "author": "Arash",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "basic-auth": "^2.0.0",
+    "express": "^4.16.3",
+    "http-errors": "^1.6.3",
+    "promise-breaker": "^4.1.4",
+    "swagger-node-runner": "^0.7.1",
+    "swagger-ui-dist": "^3.12.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.4.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.18.2",
+    "eslint-config-benbria": "^3.0.2",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "jest": "^23.4.1",
+    "supertest": "^3.1.0"
+  },
+  "scripts": {
+    "build": "babel -s -d lib src --copy-files",
+    "test:lint": "eslint src test",
+    "lint": "eslint src test",
+    "start": "npm run build && node ./lib/index.js",
+    "test": "npm run test:lint && jest test --runInBand",
+    "coverage": "jest --collectCoverageFrom=src/**.js --collectCoverageFrom=!src/index.js --coverage test"
+  },
+  "jest": {
+    "testRegex": "\\.test\\.js$",
+    "testEnvironment": "node",
+    "globals": {
+      "request": {}
+    },
+    "verbose": true,
+    "transform": {
+      ".*": "babel-jest"
+    }
+  }
+}
